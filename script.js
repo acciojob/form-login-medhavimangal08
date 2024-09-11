@@ -3,7 +3,8 @@ function getFormvalue() {
     let textInput = document.querySelectorAll('input[type="text"]');
     
     // Prevent the default form submission behavior
-    event.preventDefault();
+    event.preventDefault(); //This prevents the form from submitting (and refreshing the page).
+
 
     // Display an alert with the full name
     alert(textInput[0].value + " " + textInput[1].value);
